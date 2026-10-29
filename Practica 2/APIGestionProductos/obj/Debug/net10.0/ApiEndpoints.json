@@ -2,27 +2,17 @@
   {
     "ContainingType": "APIGestionProductos.Controllers.ProductController",
     "Method": "GetAll",
-    "RelativePath": "api/products",
+    "RelativePath": "api/Product",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[APIGestionProductos.DTOs.ProductDto, APIGestionProductos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "APIGestionProductos.Controllers.ProductController",
     "Method": "AddProduct",
-    "RelativePath": "api/products",
+    "RelativePath": "api/Product",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -33,22 +23,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "APIGestionProductos.DTOs.ProductDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "APIGestionProductos.Controllers.ProductController",
     "Method": "GetById",
-    "RelativePath": "api/products/{id}",
+    "RelativePath": "api/Product/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -59,22 +39,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "APIGestionProductos.DTOs.ProductDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "APIGestionProductos.Controllers.ProductController",
     "Method": "UpdateProduct",
-    "RelativePath": "api/products/{id}",
+    "RelativePath": "api/Product/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -95,7 +65,7 @@
   {
     "ContainingType": "APIGestionProductos.Controllers.ProductController",
     "Method": "DeleteProduct",
-    "RelativePath": "api/products/{id}",
+    "RelativePath": "api/Product/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

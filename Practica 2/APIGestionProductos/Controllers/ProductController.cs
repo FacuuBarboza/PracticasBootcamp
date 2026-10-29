@@ -5,7 +5,7 @@ using APIGestionProductos.DTOs;
 
 namespace APIGestionProductos.Controllers
 {
-    [Route("api/products")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
@@ -17,14 +17,14 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<ProductDto>> GetAll()
+        public IActionResult GetAll()
         {
             var products = _productService.GetAll();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<ProductDto> GetById(int id)
+        public IActionResult GetById(int id)
         {
             var product = _productService.GetById(id);
             if (product == null) return NotFound();
@@ -32,14 +32,14 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ProductDto> AddProduct(CreateProductDto dto)
+        public IActionResult AddProduct(CreateProductDto dto)
         {
             var newProduct = _productService.AddProduct(dto);
             return CreatedAtAction(nameof(GetById), new { id = newProduct.Id }, newProduct);
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateProduct (int id, [FromBody] CreateProductDto dto)
+        public IActionResult UpdateProduct (int id, [FromBody] CreateProductDto dto)
         {
             var updated = _productService.UpdateProduct(id, dto);
             if (!updated) return NotFound();
@@ -47,7 +47,7 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeleteProduct(int id)
+        public IActionResult DeleteProduct(int id)
         {
             var deleted = _productService.DeleteProduct(id);
             if (!deleted) return NotFound();
