@@ -17,6 +17,7 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(List<ProductDto>), StatusCodes.Status200OK)]
         public IActionResult GetAll()
         {
             var products = _productService.GetAll();
@@ -24,6 +25,8 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(ProductDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetById(int id)
         {
             var product = _productService.GetById(id);
@@ -32,6 +35,8 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(ProductDto), StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult AddProduct(CreateProductDto dto)
         {
             var newProduct = _productService.AddProduct(dto);
@@ -39,6 +44,9 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult UpdateProduct (int id, [FromBody] CreateProductDto dto)
         {
             var updated = _productService.UpdateProduct(id, dto);
@@ -47,6 +55,8 @@ namespace APIGestionProductos.Controllers
         }
 
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult DeleteProduct(int id)
         {
             var deleted = _productService.DeleteProduct(id);
