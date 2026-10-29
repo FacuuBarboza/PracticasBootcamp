@@ -1,0 +1,15 @@
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\GestiónProductos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\GestiónProductos.AssemblyInfoInputs.cache
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\GestiónProductos.AssemblyInfo.cs
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\GestiónProductos.csproj.CoreCompileInputs.cache
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\bin\Debug\net10.0\GestiónProductos.exe
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\bin\Debug\net10.0\GestiónProductos.deps.json
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\bin\Debug\net10.0\GestiónProductos.runtimeconfig.json
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\bin\Debug\net10.0\GestiónProductos.dll
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\bin\Debug\net10.0\GestiónProductos.pdb
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\GestiónProductos.dll
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\refint\GestiónProductos.dll
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\GestiónProductos.pdb
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\GestiónProductos.genruntimeconfig.cache
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\ref\GestiónProductos.dll
+C:\Users\facum\Desktop\Bootcamp\GestiónProductos\GestiónProductos\obj\Debug\net10.0\Gesti_nP.4DBCB5BA.Up2Date
